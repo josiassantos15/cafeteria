@@ -13,12 +13,12 @@
     <nav>
       <a href="#">Home</a>
       <a href="#">Sobre</a>
-      <a href="#">Endereço</a>
+      <a href="#" (click)="mostrarModal()">Endereço</a>
     </nav>
   </section>
 </header>
 
-<section>
+<section class="caixa-principal">
   <div>
     <h3>Venha conhecer o melhor café da região</h3>
     <p>
@@ -27,24 +27,60 @@
       ad a neque quos! Possimus impedit quisquam eos tenetur suscipit esse rerum
       delectus repudiandae?
     </p>
-    <a href="#">Pegue o seu agora</a>
+    <a class="botao-link">Pegue o seu agora</a>
   </div>
 </section>
 
-<section>
-  <h2><span>Sobre</span> Nós</h2>
+<section class="caixa-sobre">
+  <h2 class="titulo"><span>Sobre</span> Nós</h2>
+  <div class="sobre-container">
+    <div class="sobre-imagem">
+      <img src="../assets/about-img.jpeg" alt="sobre cafeteria" />
+    </div>
+
+    <div class="sobre-texto">
+      <h3>O que faz nosso café especial?</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+        praesentium possimus, inventore impedit asperiores sint. Ea iusto, omnis
+        ab deserunt optio, pariatur unde, excepturi minima deleniti amet
+        accusamus maiores in!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+        praesentium possimus, inventore impedit asperiores sint. Ea iusto, omnis
+        ab deserunt optio, pariatur unde, excepturi minima deleniti amet
+        accusamus maiores in!
+      </p>
+      <a class="botao-link">Saiba Mais</a>
+    </div>
+  </div>
+</section>
+
+<div #mascara class="mascara-modal" (click)="fecharModal()"></div>
+
+<div #modal class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="fecharModal()">&times;</span>
+    <h3 class="titulo"><span>Nosso</span> Endereço</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.076285425346!2d-48.47502465519659!3d-1.4514691187169193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c251ba7bc9d%3A0xe3c557877b36c9c2!2zU8OjbyBCcsOhcywgQmVsw6ltIC0gUEE!5e0!3m2!1spt-BR!2sbr!4v1738439105031!5m2!1spt-BR!2sbr"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+<a href="#" id="totop">
+  <span>TOP</span>
+</a>
+<footer>
   <div>
-    <img src="../assets/about-img.jpeg" alt="sobre cafeteria" />
+    <p>&copy; 2025 Cafeteria.</p>
+    <p>Todos os direitos reservados.</p>
   </div>
+</footer>
 
-  <div class="caixa-principal">
-    <h3>O que faz nosso café especial?</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium possimus, inventore impedit asperiores sint. Ea iusto, omnis ab deserunt optio, pariatur unde, excepturi minima deleniti amet accusamus maiores in!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium possimus, inventore impedit asperiores sint. Ea iusto, omnis ab deserunt optio, pariatur unde, excepturi minima deleniti amet accusamus maiores in!
-    </p>
-    <a href="#">Saiba Mais</a>
-  </div>
-</section>

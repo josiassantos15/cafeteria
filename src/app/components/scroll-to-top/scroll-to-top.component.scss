@@ -1,0 +1,37 @@
+#totop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #d3ad7f;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+#totop.on--totop {
+  opacity: 1;
+  visibility: visible;
+}
+
+#totop:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1rem;
+  transition: 0.3s linear;
+}
+
+#totop mat-icon {
+  font-size: 24px;
+}

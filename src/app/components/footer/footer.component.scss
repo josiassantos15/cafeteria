@@ -1,0 +1,42 @@
+footer {
+  background-color: #010103;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.3);
+
+  div{
+    max-width: 1200px;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+
+    .botao-dev {
+      cursor: pointer;
+      color: white;
+      padding: 1rem 1rem;
+      border: none;
+      transition: 0.3s linear;
+      text-decoration: none;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+
+    
+      &:hover {
+        color:  #d3ad7f;
+        letter-spacing: 0.2rem;
+      }
+    }
+    
+  }
+}

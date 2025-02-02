@@ -1,0 +1,16 @@
+<div #mascara class="mascara-modal" [class.visible]="isVisible" (click)="closeModal()"></div>
+<div #modal class="modal" [class.visible]="isVisible">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h3 class="titulo"><span>Nosso</span> Endereço</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.076285425346!2d-48.47502465519659!3d-1.4514691187169193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c251ba7bc9d%3A0xe3c557877b36c9c2!2zU8OjbyBCcsOhcywgQmVsw6ltIC0gUEE!5e0!3m2!1spt-BR!2sbr!4v1738439105031!5m2!1spt-BR!2sbr"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>

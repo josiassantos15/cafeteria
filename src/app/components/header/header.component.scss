@@ -1,0 +1,38 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #010103;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  width: 100vw;
+
+  section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding: 1.5rem 0;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  img {
+    height: 6rem;
+  }
+
+  a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #ffff;
+    transition: color 0.3s linear;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #d3ad7f;
+    border-bottom: 0.1rem solid #d3ad7f;
+    padding-bottom: 0.5rem;
+  }
+}

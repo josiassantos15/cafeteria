@@ -1,0 +1,51 @@
+.caixa-principal {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  div {
+    max-width: 60rem;
+
+    h3 {
+      color: white;
+      font-size: 6rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 1.2;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    color: white;
+    font-weight: lighter;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+}
+
+.botao-link {
+  background-color: #d3ad7f;
+  cursor: pointer;
+  margin-top: 2rem;
+  display: inline-block;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  transition: 0.3s linear;
+  border-radius: 1rem;
+
+  &:hover {
+    letter-spacing: 0.1rem;
+  }
+}
+
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}

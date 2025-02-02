@@ -1,0 +1,87 @@
+.titulo {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+
+  span {
+    color: #d3ad7f;
+  }
+}
+
+.caixa-sobre {
+  h2 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+  }
+}
+
+.sobre-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  gap: 1.5rem;
+
+  .sobre-imagem {
+    flex: 1 1 45rem;
+  }
+
+  img {
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  .sobre-texto {
+    flex: 1 1 45rem;
+    padding: 2rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    color: white;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: white;
+    line-height: 1.8;
+    padding: 1rem 0;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  a {
+    flex: 1 1 45rem;
+  }  
+  
+}
+
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.botao-link {
+  background-color: #d3ad7f;
+  cursor: pointer;
+  margin-top: 2rem;
+  display: inline-block;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  transition: 0.3s linear;
+  border-radius: 1rem;
+
+  &:hover {
+    letter-spacing: 0.1rem;
+  }
+}

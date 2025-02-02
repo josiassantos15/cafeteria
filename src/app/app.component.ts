@@ -1,45 +1,31 @@
-import { AfterViewInit, Component, ElementRef, ViewChild, HostListener } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { VideoBackgroundComponent } from './components/video-background/video-background.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MainSectionComponent } from './components/main-section/main-section.component';
+import { AboutSectionComponent } from './components/about-section/about-section.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    MatIconModule
+    MatIconModule,
+    VideoBackgroundComponent,
+    HeaderComponent,
+    MainSectionComponent,
+    AboutSectionComponent,
+    ModalComponent,
+    ScrollToTopComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements AfterViewInit {
-  title = 'cafeteria';
-  @ViewChild('modal') modal!: ElementRef;
-  @ViewChild('mascara') mascara!: ElementRef;
-
-  ngAfterViewInit(): void {
-    console.log('This.modal is already defined: ', this.modal);
-  }
-
-  mostrarModal() {
-    this.modal.nativeElement.style.left = '50%';
-    this.mascara.nativeElement.style.visibility = 'visible';
-  }
-
-  fecharModal() {
-    this.modal.nativeElement.style.left = '-30%';
-    this.mascara.nativeElement.style.visibility = 'hidden';
-  }
-
-  @HostListener('window:scroll', [])
-  onScroll() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const button = document.getElementById('totop');
-
-    if (scrollTop > 300) {
-      button?.classList.add('on--totop');
-    } else {
-      button?.classList.remove('on--totop');
-    }
-  }
+export class AppComponent {
+  modalVisible = false;
 }

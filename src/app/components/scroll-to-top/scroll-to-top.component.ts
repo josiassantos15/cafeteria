@@ -12,7 +12,7 @@ export class ScrollToTopComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop; // Usando scrollY
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
     if (scrollTop > 300) {
       this.totop.nativeElement.classList.add('on--totop');
     } else {
